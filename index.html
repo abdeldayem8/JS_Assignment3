@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="./img/bookmark-removebg-preview.png">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+
+</head>
+<body>
+     <div class="container py-5 d-flex justify-content-center flex-column align-items-center">
+        <Div><h1>Bookmarker</h1></Div>
+        
+        <div class="bookmarkBody w-100 mt-5 p-3 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2><i class="fa-solid fa-bookmark"></i> &nbsp; Bookmark your favorite sites &nbsp; <i class="fa-solid fa-bookmark"></i></h2>
+            <Div class="w-100 d-flex justify-content-center flex-column ">
+                <label for="bookmarkname" class="pb-2 fw-semibold"><i class="fa-solid fa-book-bookmark pe-2"></i> &nbsp; Site Name</label>
+                <input type="text" class="form-control" id="bookmarkname" placeholder="Bookmark Name">
+            </Div>
+        <Div class="w-100 d-flex justify-content-center flex-column ">
+            <label  for="siteUrl" class="pb-2 fw-semibold"><i class="fa-solid fa-link pe-2"></i> &nbsp; Site URL</label>
+            <input id="siteUrl" type="text" class="form-control" placeholder="Website URL">
+        </Div>
+        <button onclick="addWebsite()"  type="submit" id="submitbutton" class="btn btn-outline-danger px-5">Submit</button>
+        </div>
+        <table class="table table-striped mt-4 text-center bg-white">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tablecontnet">
+                
+
+            </tbody>
+        </table>
+     </div>
+    <script src="./JS/bootstrap.bundle.min.js"> </script>
+    <script src="https://fastly.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
